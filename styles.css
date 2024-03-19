@@ -1,0 +1,83 @@
+/* Set background color, font family, and remove default margin and padding for the entire page */
+body {
+	background-color: pink;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Style the header section with a yellow background and padding */
+header {
+	background-color: yellow;
+	padding: 20px;
+}
+
+/* Style the navigation menu */
+nav {
+	display: flex; /* Use flexbox to align navigation items horizontally */
+	justify-content: space-between; /* Distribute navigation items evenly across the container */
+}
+
+nav ul {
+	list-style: none; /* Remove default bullet points from the unordered list */
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block; /* Display navigation items in a horizontal line */
+	margin-right: 20px; /* Add some spacing between navigation items */
+}
+
+nav a {
+	text-decoration: none; /* Remove underline from links */
+	color: black; /* Set link color to black */
+}
+
+nav a:hover {
+	color: #333; /* Change link color on hover */
+}
+
+/* Style the dropdown menu */
+.dropdown {
+	position: right; /* Position the dropdown menu to the right */
+	display: inline-block; /* Display the dropdown menu inline with other navigation items */
+	direction: rtl; /* Set the direction of the dropdown menu to right-to-left */
+}
+
+.dropdown-contents {
+	display: none; /* Hide the dropdown menu by default */
+	position: absolute; /* Position the dropdown menu absolutely */
+	background-color: #f1f1f1; /* Set the background color of the dropdown menu */
+	min-width: 160px; /* Set the minimum width of the dropdown menu */
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Add a shadow effect to the dropdown menu */
+	z-index: 1; /* Set the stacking order of the dropdown menu */
+}
+
+.dropdown-contents a {
+	color: black; /* Set the color of links in the dropdown menu */
+	padding: 12px 16px; /* Add some padding to the links in the dropdown menu */
+	text-decoration: none; /* Remove underline from links in the dropdown menu */
+	display: block; /* Display links in the dropdown menu as block elements */
+}
+
+.dropdown-contents a:hover {
+	background-color: #ddd; /* Change the background color of links in the dropdown menu on hover */
+}
+
+.dropdown:hover .dropdown-contents {
+	display: block; /* Show the dropdown menu when the parent element is hovered over */
+}
+
+/* Style the content sections */
+section {
+	padding: 20px; /* Add some padding to the content sections */
+	border-bottom: 1px solid #ddd; /* Add a bottom border to the content sections */
+}
+
+/* Style the footer section */
+footer {
+	text-align: center; /* Center the text in the footer */
+	padding: 20px; /* Add some padding to the footer */
+	background-color: blue; /* Set the background color of the footer */
+}
